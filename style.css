@@ -1,10 +1,17 @@
-#Worldmap{
+html, body {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+
+#map-canvas{
     position: absolute;
     background-color: lightgrey;
     top :70px;
     width: 710px;
+    height: 710px;
     border :solid 2px black;
-    left : 540px;
+    left : 300px;
     padding: 3px;
     border-radius:8px;
 }

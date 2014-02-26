@@ -1,16 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<!--External Libraries js -->
-    	<script src="lib/jquery-1.10.2.min.js"></script>
-    	<script src="lib/jsapi/jsapi.js"></script>
-    	<!--Internal js files-->
-    	<script src="map.js"></script>
-    	<script src="main.js"></script>
-    	<!--Stylesheets-->
-    	<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<div id="Worldmap"></div>
-	</body>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <!--External js libraries-->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <!--Internal js files-->
+    <script src="map.js"></script>
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+  </body>
 </html>
