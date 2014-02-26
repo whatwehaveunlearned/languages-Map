@@ -1,0 +1,4 @@
+function googleReady() {
+    worldMap();
+    usaMap();
+}

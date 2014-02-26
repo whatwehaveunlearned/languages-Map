@@ -1,0 +1,10 @@
+#Worldmap{
+    position: absolute;
+    background-color: lightgrey;
+    top :70px;
+    width: 710px;
+    border :solid 2px black;
+    left : 540px;
+    padding: 3px;
+    border-radius:8px;
+}
