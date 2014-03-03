@@ -2,9 +2,23 @@ var map;
 var TILE_SIZE = 256;
 var languageMap = {}; 
 
-languageMap['language1'] = {
-	center: new google.maps.LatLng(41.850033,-87.6500523)
-}; 
+//languageMap['language1'] = {
+//	center: new google.maps.LatLng(41.850033,-87.6500523)
+//};
+
+//Save languages info to plot into the map
+for (var i = 0; i<collection.element.length; ++i){
+	languageMap[i]=collection.element[i].dc_coverage_spatial.split('=')
+} 
+console.log(languageMap)
+
+//Get coordinates for points
+//function coordinates(language){
+//	var coordinates = [];
+//	var north = language.substring(6,12)
+//	var east = language.substring()
+//}
+
 
 var mapcenter = new google.maps.LatLng(43.5333,5.7000);
 
