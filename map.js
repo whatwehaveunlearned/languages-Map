@@ -83,18 +83,18 @@ function initialize() {
 
 		var infowindowOptions = {
 			content: contentString[i],
-		  	//position: languageCircle[i].center,
+		  	position: languageCircle[i].center,
 		   	maxWidth: 150
 		}
 		infowindow.push(new google.maps.InfoWindow(infowindowOptions));
 	}
 
 	for (x in languageCircle) {
-		google.maps.event.addListener(languageCircle[x], 'click', makeMapListener(infowindow[x], map, languageCircle[x]));
+		google.maps.event.addListener(languageCircle[x], 'click', makeMapListener(infowindow[x], map));
 	}
 
 	function makeMapListener(window, map, markers) {
-  		return function() { window.open(map, markers); };
+  		return function() { window.open(map); };
 	}
 }
 
