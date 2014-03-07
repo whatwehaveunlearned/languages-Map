@@ -1,22 +1,4 @@
-//Variables Declaration
-var map;
-var TILE_SIZE = 256;
-var languageMap = [];
-//coordinates variables
-var north = [];
-var east = [];
-//Arrays to save coordinates with or withoput duplicates
-var languageCenter = [];
-var extra_data = [];
-var extra_dataNoDuplates = [];
-var languagesCenterNoDuplicates = [];
-//Variables to paint the languages as circles in the map (center and the actual circles)
-var circleCenter = []; 
-var languageCircle = [];
-var contentString = [];
-var infowindow = []; 
-
-function initialize() {
+function initializeLanguageMap() {
   	//Save languages center coordinates to plot into the map
 	for (var i = 0; i<collection.element.length; ++i) {
 		languageMap[i] = collection.element[i].dc_coverage_spatial.split('=');
@@ -97,6 +79,4 @@ function initialize() {
   		return function() { window.open(map); };
 	}
 }
-
-google.maps.event.addDomListener(window, 'load', initialize);
 
