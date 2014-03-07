@@ -25,5 +25,10 @@ function drawTable() {
   	google.visualization.events.addListener(table, 'select', function() {
     	var row = table.getSelection()[0].row;
     	alert('You selected ' + data.getValue(row, 0));
+    	for(i in extra_dataNoDuplates) {
+    		if(extra_dataNoDuplates[i]==data.getValue(row, 0)) {
+    			return function() { infowindow[i].open(map); }
+    		}
+    	}
   	});
 }

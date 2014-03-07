@@ -2,7 +2,7 @@ function initializeLanguageMap() {
   	//Save languages center coordinates to plot into the map
 	for (var i = 0; i<collection.element.length; ++i) {
 		languageMap[i] = collection.element[i].dc_coverage_spatial.split('=');
-		extra_data[i] = collection.element[i].dc_content_language
+		extra_data[i] = collection.element[i].dc_subject_language
 		east[i] = languageMap[i][2];
 		languageMap[i] = languageMap[i][1].split(' ');
 		north[i] = languageMap[i][0].substring(0,(languageMap[i][0].length)-1);
@@ -75,8 +75,10 @@ function initializeLanguageMap() {
 		google.maps.event.addListener(languageCircle[x], 'click', makeMapListener(infowindow[x], map));
 	}
 
-	function makeMapListener(window, map, markers) {
+	function makeMapListener(window, map) {
   		return function() { window.open(map); };
 	}
+
+	return map;
 }
 

@@ -19,8 +19,8 @@ var infowindow = [];
 
 // MAIN
 //Initialize Language Map
-google.maps.event.addDomListener(window, 'load', initializeLanguageMap);
+map = google.maps.event.addDomListener(window, 'load', initializeLanguageMap);
 //load googlecharts for the table
 google.load('visualization', '1', {'packages': ['table']});
-google.setOnLoadCallback(drawTable);
+google.setOnLoadCallback(drawTable)
 
