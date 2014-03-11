@@ -76,7 +76,7 @@ function initializeLanguageMap() {
 	}
 
 	function makeMapListener(window, map) {
-  		return function() { window.open(map); };
+  		return function() { window.open(map) };
 	}
 
 	return map;

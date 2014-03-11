@@ -4,7 +4,7 @@ function drawTable() {
   	data.addColumn('string', 'Language');
   	data.addColumn('string', 'Region');
   	data.addColumn('string', 'Researcher');
-	data.addRows(collection.element.length);
+	  data.addRows(collection.element.length);
   	for (var i=0; i<collection.element.length; i++){
 	  data.setCell(i, 0, collection.element[i].dc_subject_language);
 	  data.setCell(i, 1, collection.element[i].dc_description_region);
