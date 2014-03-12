@@ -2,7 +2,7 @@
   <head>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script src="data/sample_collection.json"></script>
-    <script src="main.js"></script>
+    <script src="code.js"></script>
     <script type="text/javascript">
       google.load('visualization', '1', {'packages': ['table', 'map', 'corechart']});
       google.setOnLoadCallback(initialize);
@@ -84,6 +84,7 @@
         google.visualization.events.addListener(table, 'select',
             function() {
               map.setSelection(table.getSelection());
+              console.log(map)
             });
 
         // Set a 'select' event listener for the map.

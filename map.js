@@ -30,6 +30,7 @@ function initializeLanguageMap() {
 	center: mapcenter
 	};
 
+	//var map = new google.visualization.Map(document.getElementById('map-canvas'),mapOptions);
 	var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
 	for (var i = 0; i<circleCenter.length; i++) {

@@ -16,3 +16,9 @@ html, body {
     padding: 3px;
     border-radius:8px;
 }
+
+#table{
+    position:absolute;
+    top: 70px;
+    left: 730px;
+}
